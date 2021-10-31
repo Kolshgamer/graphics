@@ -1,4 +1,4 @@
-package com.example;
+package com.graphics;
 
 import com.google.inject.Provides;
 import javax.inject.Inject;
@@ -14,9 +14,9 @@ import net.runelite.client.plugins.PluginDescriptor;
 
 @Slf4j
 @PluginDescriptor(
-	name = "Example"
+	name = "Graphics"
 )
-public class ExamplePlugin extends Plugin
+public class GraphicsPlugin extends Plugin
 {
 	@Inject
 	private Client client;
