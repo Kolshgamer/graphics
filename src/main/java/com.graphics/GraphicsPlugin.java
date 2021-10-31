@@ -22,7 +22,7 @@ public class GraphicsPlugin extends Plugin
 	private Client client;
 
 	@Inject
-	private ExampleConfig config;
+	private GraphicsConfig config;
 
 	@Override
 	protected void startUp() throws Exception
@@ -46,8 +46,8 @@ public class GraphicsPlugin extends Plugin
 	}
 
 	@Provides
-	ExampleConfig provideConfig(ConfigManager configManager)
+	GraphicsConfig provideConfig(ConfigManager configManager)
 	{
-		return configManager.getConfig(ExampleConfig.class);
+		return configManager.getConfig(GraphicsConfig.class);
 	}
 }
